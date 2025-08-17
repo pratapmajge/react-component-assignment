@@ -1,50 +1,89 @@
-# React + TypeScript + Vite
+# 📘 Front-End Assignment – React Component Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **React + TypeScript + Vite** based **component library**, styled with **TailwindCSS**, documented with **Storybook**, and tested using **Vitest + React Testing Library**.  
 
-Currently, two official plugins are available:
+It implements two reusable components:  
+- **InputField** – text input with multiple variants, sizes, and states.  
+- **DataTable** – table with sorting, row selection, and loading/empty states.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
+- React 18 + TypeScript  
+- Vite – build tool  
+- TailwindCSS – utility-first styling  
+- Storybook – component documentation  
+- Vitest + React Testing Library – unit testing  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 📦 Installation & Setup
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+# Clone repo
+git clone <your-repo-url>
+cd react-assignment
+
+# Install dependencies
+npm install
+
+# Run Vite dev server
+npm run dev
+
+# Run Storybook
+npm run storybook
+
+# Build Storybook for deployment
+npm run build-storybook
+
+# Run unit tests
+npm run test
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🎨 Components
+🔹 InputField
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Variants: outlined, filled, ghost
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Sizes: sm, md, lg
+
+States: default, disabled, invalid, loading
+
+Features: clearable input, password toggle, helper/error text
+
+Accessible with aria-* attributes
+
+🔹 DataTable
+
+Configurable columns
+
+Column sorting
+
+Row selection (checkboxes)
+
+Loading & empty states
+
+Accessible with role="table"
+
+## 📖 Storybook
+
+Run locally:
 ```
+npm run storybook
+```
+
+Or deploy with Chromatic / Vercel / Netlify.
+
+## Screenshots
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f4c3bafe-111b-4327-a70d-cea1e9d3b3c4" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/29b25809-6f55-4514-a3e3-d26a251a83da" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bddcfa7f-925e-4530-a637-fbb2e43f44b3" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7d211c35-46ff-4067-9d06-d7d771aaaa96" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3fc368fc-efcc-4264-980c-ba205b8eb78d" />
+
+
+
+
+
