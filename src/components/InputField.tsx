@@ -99,7 +99,8 @@ const InputField = forwardRef<HTMLInputElement, InputFieldProps>(
     const disabledCls = disabled ? "opacity-60 cursor-not-allowed" : "";
 
     const baseInputCls =
-      "w-full placeholder:text-gray-400 dark:placeholder:text-gray-500 outline-none transition-colors";
+      "w-full text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 outline-none transition-colors";
+
 
     const inputClasses = [
       baseInputCls,
